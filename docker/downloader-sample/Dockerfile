@@ -21,8 +21,10 @@ RUN apk add --update \
 # of the ../downloader image.
 COPY openam.war /
 COPY openidm.zip /
-COPY openig.war /
+# COPY openig.war /
 COPY opendj.zip /
+COPY amster.zip /
+
 
 # See the download script - you will need to edit this to mimic the 
 COPY download /usr/bin/
